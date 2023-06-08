@@ -1,0 +1,103 @@
+.content-content {
+  gap: 120px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
+}
+.content-main {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content-branding {
+  gap: var(--dl-space-space-threeunits);
+  display: flex;
+  max-width: 400px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.content-heading {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.content-logo {
+  width: 235px;
+  height: 93px;
+}
+.content-links {
+  gap: 100px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.content-items {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.content-link {
+  color: rgb(255, 255, 255);
+}
+.content-link1 {
+  color: rgb(255, 255, 255);
+}
+.content-link2 {
+  color: rgb(255, 255, 255);
+}
+.content-caption {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  align-self: center;
+  line-height: 21px;
+}
+.content-copyright {
+  color: rgb(118, 105, 104);
+  font-size: 12px;
+}
+@media(max-width: 991px) {
+  .content-content {
+    gap: var(--dl-space-space-threeunits);
+  }
+  .content-main {
+    gap: var(--dl-space-space-threeunits);
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .content-branding {
+    max-width: 80%;
+  }
+  .content-heading {
+    gap: var(--dl-space-space-unit);
+  }
+  .content-links {
+    gap: var(--dl-space-space-threeunits);
+    flex-direction: column;
+  }
+}
+@media(max-width: 767px) {
+  .content-content {
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+  .content-branding {
+    max-width: 70%;
+  }
+}
+@media(max-width: 479px) {
+  .content-logo {
+    width: 207px;
+    height: 83px;
+  }
+}

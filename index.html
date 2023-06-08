@@ -1,248 +1,522 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <title>think Spanish</title>
+    <meta property="og:title" content="think-Spanish-" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-<head>
-  <meta charset="utf-8">
-  <title>think Spanish</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles1.css">
-  <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
-  <script src="https://kit.fontawesome.com/992a5a69f2.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-  <style type="text/css">
-    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
-  </style>
-</head>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Karla;
+        font-size: 16px;
+      }
 
-<body>
-  <section id="title" class="titleon">
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
 
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+      <!-- <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script> -->
 
-    <!-- Nav Bar -->
-
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark nav-fonts">
-        <a class="navbar-brand" href="">tindog</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="#navbarTogglerDemo02" aria-expand="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item nav-fonts">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item nav-fonts">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item nav-fonts">
-              <a class="nav-link" href="#contact">Support the Clasroom</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-
-      <!-- Title -->
-
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 title-box">
-              <h1>Meet new and interesting dogs nearby.</h1>
-              <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
-              <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+      <div class="home-container">
+        <section class="home-hero">
+          <div class="home-main">
+            <div class="home-video">
+              <video
+                poster="https://images.unsplash.com/photo-1584208632661-f8db31bb6489?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQyfHxtZXhpY298ZW58MHx8fHwxNjg1NDkyODU4fDA&amp;ixlib=rb-4.0.3&amp;h=1500"
+                class="home-video1"
+              ></video>
+              <div class="home-tint"></div>
             </div>
-            <div class="col-lg-6 cellphone-img">
-              <img class="rotateimg" src="images/iphone6.png" alt="iphone-mockup">
-            </div>
-          </div>
-        </div>
-  </section>
-  </div>
-
-  <!-- Features -->
-
-  <section id="features" class="featureon">
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-4 feature-item">
-          <i class="fas fa-check-circle feature-icon"></i>
-          <h3>Easy to use.</h3>
-          <p>So easy to use, even your dog could do it.</p>
-        </div>
-        <div class="col-lg-4 feature-item">
-          <i class="fas fa-bullseye feature-icon"></i>
-          <h3>Elite Clientele</h3>
-          <p>We have all the dogs, the greatest dogs.</p>
-        </div>
-        <div class="col-lg-4 feature-item">
-          <i class="fas fa-heart feature-icon"></i>
-          <h3>Guaranteed to work.</h3>
-          <p>Find the love of your dog's life or your money back.</p>
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-
-
-  <!-- Testimonials -->
-
-  <section id="testimonials" class="testimons">
-
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-          <img class="promo-image" src="images/dog-img.jpg" alt="dog-profile">
-          <em>Pebbles, New York</em>
-        </div>
-
-        <div class="carousel-item">
-          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-          <img class="promo-image" src="images/lady-img.jpg" alt="lady-profile">
-          <em>Beverly, Illinois</em>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-    </div>
-
-  </section>
-
-  <!-- Pricing -->
-
-  <section id="pricing" class="priceon">
-
-    <h2>A Plan for Every Need</h2>
-    <p class="p-text-pricing">Simple and affordable price plans for your and your learning goals.</p>
-
-
-    <div class="card-deck mb-3">
-      <div class="col col-lg-4 col-md-6 cards-pa">
-        <div class="card">
-          <div class="card-header">
-            <h2>Free</h2>
-          </div>
-          <div class="card-body">
-            <p>All classes at the beginning will require a 15-minute pre-screening</p>
-            <p>Level assessment of proficiency</p>
-            <p>And to attain the goals that the student is aiming for.</p>
-            <button type="button" class="btn btn-lg btn-block btn-outline-dark ">Book a class</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col col-lg-4 col-md-6 cards-pa">
-        <div class="card">
-          <div class="card-header">
-            <h2>One-to-one</h2>
-          </div>
-          <div class="card-body">
-            <h4><s>$40 / hr</s></h4>
-            <h2>$30 / hr</h2>
-            <p>Language tutoring class offers personalized attention</p>
-            <p>Tailored learning plans</p>
-            <p>Focused practice</p>
-            <button type="button" class="btn btn-lg btn-block btn-dark">Book a class</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col col-lg-4 col-md-12 cards-pa">
-        <div class="card">
-          <div class="card-header">
-            <h3>Traveling Families</h3>
-          </div>
-          <div class="card-body">
-            <p>For more than one person, and small groups</p>
-            <p>Arrangements can be made.</p>
-            <p><i>Please get in touch for more information.</i></p>
-            <button type="button" class="btn btn-lg btn-block btn-dark">More info</button>
-          </div>
-        </div>
-      </div>
-<!-- 
-      <div class="col col-lg-4 col-md-12 cards-pa">
-        <div class="card">
-          <div class="card-header">
-            <h3>Group Class</h3>
-          </div>
-          <div class="card-body">
-            <h2>Soon</h2>
-            <p>Subscribe to stay up to date</p>
-            <button type="button" class="btn btn-lg btn-block btn-dark">Reach out</button>
-          </div>
-        </div>
-      </div> -->
-
-    </div>
-  </section>
-
-  <!-- Donate/Contact -->
-
-  <section id="cta" class="cta1">
-    <p class="textInGreen">Get news and relevant information on your learning journey.</p>
-      <form action="https://thinkspanish.us21.list-manage.com/subscribe/post?u=f28777ad32ac7c8b652460bc3&amp;id=d38774d238&amp;f_id=00dd40e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <div class="mc-field-group" >
-              <input type="email" value="" name="EMAIL" placeholder="Email" class="required email emailBorder" id="mce-EMAIL" required>
-              <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-          </div>
-
-          <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-       
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f28777ad32ac7c8b652460bc3_d38774d238" tabindex="-1" value=""></div>
-            <div class="optionalParent">
-                <div class="clear foot">
-                    <!-- <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"> -->
-                    <button type="submit" class="btn btn-outline-light btn-lg download-button" value="Subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
+            <div class="home-content">
+              <header data-thq="thq-navbar" class="home-navbar">
+                <img
+                  alt="think-spanish logo"
+                  src="public/Assets/new_logo-200h.png"
+                  class="home-logo2"/>
+           
+                <div data-thq="thq-burger-menu" class="home-menu">
+                  <div class="home-links">
+   
+                    <a href="/contact.html" class="home-link link">Book a Class</a>
+                    <a href="/pricing.html" class="home-link link">Pricing</a>
+                  </div>
+                  <button class="home-hamburger button">
+                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                      <path
+                        d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                      ></path>
+                    </svg>
+                  </button>
                 </div>
+                <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+                  <div
+                    data-thq="thq-mobile-menu-nav"
+                    data-role="Nav"
+                    class="home-nav"
+                  >
+                    <div class="home-container1">
+                      <a href="index.html">
+                        <img
+                        alt="think-spanish logo"
+                        src="public/Assets/new_logo-200h.png"
+                        class="home-logo2"/>
+                      </a>
+                      <div data-thq="thq-close-menu" class="home-menu-close">
+                        <svg viewBox="0 0 1024 1024" class="home-icon02">
+                          <path
+                            d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <nav
+                      data-thq="thq-mobile-menu-nav-links"
+                      data-role="Nav"
+                      class="home-nav1"
+                    >
+                      <button class="home-link2 button button-clean" onclick="window.location.href='/pricing.html'">
+                        Pricing
+                      </button>
+                      <br>
+                      <button class="home-link3 button button-clean" onclick="window.location.href='/contact.html'" >
+                        Book a Class
+                      </button>
+                      <br>
+                      <br>
+                      <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a Tea', '#f06f52', 'O5O3LC489');kofiwidget2.draw();</script> 
+
+                      <div class="center">
+                        <div class="home-content4">
+                          <p class="home-caption5">Made in CA with ❤️</p>
+                          <span class="home-caption5">© 2023, think Spanish</span>
+                        </div>
+                      </div>
+
+                    </nav>
+                  </div>
+                </div>
+
+              </header>
+              <div class="home-center">
+                <div class="home-heading">
+                  <h1 class="home-header">Learn Spanish today!</h1>
+                  <p class="home-caption">
+                    Don't let language barriers hold you back. Learn a new
+                    language and connect with locals on your next adventure.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+          <div id="features" class="home-feaures">
+            <div class="home-content1">
+              <div class="feature-feature">
+                <div class="feature-heading">
+                  <img
+                    alt="image"
+                    src="public/Icons/thumbs-up.svg"
+                    class="feature-icon"
+                  />
+                  <h3 class="feature-header"><span>Native Knowledge</span></h3>
+                </div>
+                <p class="feature-description">
+                  <span>
+                    A native speaker can help you master pronunciation and
+                    accent.
+                  </span>
+                </p>
+              </div>
+              <div class="feature-feature">
+                <div class="feature-heading">
+                  <img
+                    alt="image"
+                    src="public/Icons/headset.svg"
+                    class="feature-icon"
+                  />
+                  <h3 class="feature-header"><span>Cultural Insight</span></h3>
+                </div>
+                <p class="feature-description">
+                  <span>
+                    Native speakers can provide practical tips for real-life
+                    language use.
+                  </span>
+                </p>
+              </div>
+              <div class="feature-feature">
+                <div class="feature-heading">
+                  <img
+                    alt="image"
+                    src="public/Icons/person.svg"
+                    class="feature-icon"
+                  />
+                  <h3 class="feature-header">
+                    <span>Conversational Method</span>
+                  </h3>
+                </div>
+                <p class="feature-description">
+                  <span>
+                    Conversing with a native speaker enhances your language
+                    skills and fluency.
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="tours" class="home-quick-view">
+          <br>
+          <div>
+            <div class="home-main1">
+              <div class="home-heading1">
+                <h2 class="home-header1">Enhanced travel experience</h2>
+                <p class="home-caption1">
+                  Speaking the local language can help you navigate the country
+                  more easily, as you will be able to read signs, ask for
+                  directions, and negotiate prices with ease. This will make your
+                  travels more enjoyable and less stressful.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="home-offers">
+          
+              <div class="home-offer-container">
+                <div class="offer-offer">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1568402102990-bc541580b59f?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDJ8fG1leGljb3xlbnwwfHx8fDE2ODU0OTI4NTV8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="offer-image"
+                  />
+                  <div class="offer-content">
+                    <div class="offer-details">
+                      <span class="offer-text">
+                        <span>Traveling soon?</span>
+                      </span>
+                    </div>
+                    <span class="offer-text1">
+                      <span>
+                        Our language learning program is designed to help you
+                        speak confidently and understand the culture like a
+                        local. Start your language journey today and unlock a
+                        world of new experiences!
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="home-offer-container1">
+                <div class="offer-offer">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1603855873822-0931a843ee3a?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fG1leGljYW58ZW58MHx8fHwxNjg1NDk0Mzk0fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="offer-image"
+                  />
+                  <div class="offer-content">
+                    <div class="offer-details">
+                      <span class="offer-text">
+                        <span>Make learning fun!</span>
+                      </span>
+                    </div>
+                    <span class="offer-text1">
+                      <span>
+                        We provide learners with opportunities to actively
+                        engage with the language, as interactivity can help
+                        learners develop their language skills in a more
+                        effective and enjoyable way.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+           
+              <div class="home-offer-container2">
+                <div class="offer-offer offer-root-class-name">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1582234372722-50d7ccc30ebd?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDl8fG1leGljYW4lMjBmb29kfGVufDB8fHx8MTY4NTQ5NDI5Mnww&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="offer-image"
+                  />
+                  <div class="offer-content">
+                    <div class="offer-details">
+                      <span class="offer-text"><span>Enjoy food</span></span>
+                    </div>
+                    <span class="offer-text1">
+                      <span>
+                        Being able to order at a restaurant in the local
+                        language can enhance your travel experience by allowing
+                        you to try local foods and immerse yourself in the local
+                        culture, as well as help you avoid misunderstandings or
+                        confusion when ordering food.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+           
+          </div>
+        </section>
+        <section id="how-it-works" class="home-highlights">
+          <div class="home-highlight">
+            <div>
+              <div class="home-heading2">
+                <h2 class="home-header2">
+                  <span>Meet your&nbsp;</span>
+                  <span>instructor</span>
+                </h2>
+                <div class="container">
+                  <p style="width: 350px;">
+                    <span class="home-text09">Hola! Me llamo Roberto,</span>
+                    <br class="home-text10" />
+                    <span class="home-text11">
+                      I'm a lifelong learner committed to setting clear goals in
+                      both my personal and professional lives.
+                    </span>
+                    <br class="home-text12" />
+                    <br class="home-text13" />
+                    <span class="home-text14">
+                      As a software developer, I spend my days solving complex
+                      logic problems, and in the evenings, I will help you achieve
+                      your learning goals.
+                    </span>
+                    <br class="home-text15" />
+                    <span class="home-text16">
+                      Language learning has been part of my life, as I currently
+                      speak fluently French, Portuguese, and English, with Spanish
+                      being my native tongue.
+                    </span>
+                    <br class="home-text17" />
+                    <br class="home-text18" />
+                    <span class="home-text19">
+                      My experience in tutoring and mentoring on a one-to-one
+                      basis goes back to when I was in college, helping other
+                      students improve their understanding of basic computer
+                      programming concepts.
+                    </span>
+                    <br class="home-text20" />
+                    <br class="home-text21" />
+                    <span class="home-text22">
+                      In addition, my current day job also requires mentoring
+                      younger developers; this is where I have found a deeper
+                      sense of purpose.
+                    </span>
+                    <br class="home-text23" />
+                    <span class="home-text24">
+                      I believe that seeing others improve and thrive is every
+                      tutor's or mentor's goal.
+                    </span>
+                    <br class="home-text25" />
+                    <br class="home-text26" />
+                    <span class="home-text27">
+                      I'm confident that the only way to graduate to the next
+                      level is by sharing my knowledge with others and creating
+                      value within the local community here in the Sault.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="home-image">
+              <img
+                alt="image"
+                src="public/Assets/meet_yourinstructor-1500w.jpg"
+                class="home-image1"
+              />
+              <div class="home-rectangle"></div>
+            </div>
+            <a
+              href="https://www.linkedin.com/in/roberto-vallado-25994825a/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-read-more button-arrow button"
+            >
+              <span class="home-text28">Know more</span>
+              <span class="home-text29">&gt;</span>
+            </a>
+          </div>
+        </section>
+        <section class="home-articles">
+          <div id="articles" class="home-content3">
+            <div class="home-heading3">
+              <h2 class="home-header3">Educational Program</h2>
+              <p class="home-caption3">Learning Method</p>
+            </div>
+            <div class="home-list">
+              <div class="home-row">
+                <div class="article-article article-root-class-name1">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDIzfHxzdHVkZW50c3xlbnwwfHx8fDE2ODU0OTU3MTN8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="article-image"
+                  />
+                  <div class="article-content">
+                    <div class="article-heading">
+                      <h2 class="article-header"><span>One-To-One</span></h2>
+                      <p class="article-description">
+                        <span>
+                          Looking to learn Spanish for your next trip to a
+                          Spanish-speaking country? Look no further! As a native
+                          Spanish speaker and experienced instructor, I can help
+                          you achieve your language learning goals through a
+                          personalized and well-developed one-to-one course.
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="article-article article-root-class-name">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1531088908835-39526ed12409?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDUzfHxtZXhpY2FuJTIwdHJhdmVsZXJ8ZW58MHx8fHwxNjg1NDk1NjMwfDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="article-image"
+                  />
+                  <div class="article-content">
+                    <div class="article-heading">
+                      <h2 class="article-header"><span>Interactive</span></h2>
+                      <p class="article-description">
+                        <span>
+                          Through interactive and engaging lessons, you'll
+                          develop the language skills you need to confidently
+                          navigate any Spanish-speaking country. From ordering
+                          food in restaurants to asking for directions and
+                          engaging in small talk with locals, I'll equip you
+                          with the language tools you need to make the most of
+                          your travel experience.
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-row1">
+                <div class="article-article article-root-class-name2">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1564762332974-5bf63a654c9d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE0fHxtZXhpY2FuJTIwY3VsdHVyZXxlbnwwfHx8fDE2ODU0OTU1OTV8MA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="article-image"
+                  />
+                  <div class="article-content">
+                    <div class="article-heading">
+                      <h2 class="article-header"><span>Culture</span></h2>
+                      <p class="article-description">
+                        <span>
+                          Course isn't just about language proficiency. I'll
+                          also introduce you to the rich culture and traditions
+                          of the Spanish-speaking world, helping you gain a
+                          deeper appreciation and understanding of the countries
+                          you'll be visiting.
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="article-article article-root-class-name3">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1521335751419-603f61523713?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQxfHx0cmF2ZWxlcnN8ZW58MHx8fHwxNjg1NDk1NDg5fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+                    class="article-image"
+                  />
+                  <div class="article-content">
+                    <div class="article-heading">
+                      <h2 class="article-header">
+                        <span>Understand your destination</span>
+                      </h2>
+                      <p class="article-description">
+                        <span>
+                          Discover the power of understanding your destination,
+                          as you delve into the language and culture of
+                          Spanish-speaking countries. Open the door to a world
+                          of possibilities and make your travels truly
+                          unforgettable with our Spanish course.
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="find" class="home-find">
+          <div class="home-heading4">
+            <h2 class="home-header4">Get in touch!</h2>
+            <p class="home-caption4">
+              Ask for any other relevant information for your learning journey
+              and book a class today!
+            </p>
+          </div>
+        </section>
+        <section class="home-footer">
+          <div class="home-content4">
+            <div class="home-main2">
+              <div class="home-branding">
+                <div class="home-heading5">
+                  <a href="index.html">
+                    <img
+                    alt="think-spanish logo"
+                    src="public/Assets/new_logo-200h.png"
+                    class="home-logo2"/>
+                  </a>
+                </div>
+              </div>
+              <div class="home-links1">
+                <div class="home-items">
+                  <button class="home-link2 button button-clean" onclick="window.location.href='/pricing.html'">
+                    Pricing
+                  </button>
+                  <button class="home-link3 button button-clean" onclick="window.location.href='/contact.html'" >
+                    Book a Class
+                  </button>
+                </div>
+
+                <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a Tea', '#f06f52', 'O5O3LC489');kofiwidget2.draw();</script> 
+
+              </div>
+            </div>
+  
+            <p class="home-caption5">Made in CA with ❤️</p>
+            <span class="home-copyright">© 2023, think Spanish</span>
+          </div>
+        </section>
+        <div>
 
         </div>
-      </form>
-
-      <div class="footer-anchor contactUs">
-        <button type="button" class="btn btn-dark btn-lg download-button contactButton" style="margin: none;"><i class="fas fa-envelope"></i> Contact</button>
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a Tea', '#f06f52', 'O5O3LC489');kofiwidget2.draw();</script> 
       </div>
-
- 
-  </section>
-
-  <!-- Contact -->
-
-    <footer id="contact">
-      <!-- <i class="fab fa-facebook-square footer-anchor"></i> -->
-      <!-- <i class="fas fa-envelope footer-anchor"></i> -->
-      <div class="wrapper">
-        <div class="company">
-          <p class="textInGreen">© 2023, think Spanish</p>
-        </div>
-      </div>
-      <div class="footer-anchor">
-        <p class="textInGreen">Made in CA with ❤️</p>
-      </div>
-    </footer>
-</body>
-
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
 </html>
