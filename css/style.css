@@ -237,3 +237,32 @@
   padding: 10px;
   padding-top: 10REM;
 }
+
+/* //NEW CSS */
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+p {
+  color: #698474;
+}
+
+/* Testimonials */
+
+.price-item {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.pricing-image {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.presson {
+  background-color:#eb4559;
+  text-align: center;
+  padding: 30px 0 30px;
+}
+
